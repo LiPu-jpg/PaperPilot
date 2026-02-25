@@ -3,7 +3,7 @@
  * OpenCode Skill Installer
  * 
  * Installs PaperPilot skills to OpenCode's skill directory
- * Default: ~/.config/opencode/skills/
+ * Default: ~/.opencode/skills/
  */
 
 const fs = require('fs');
@@ -23,6 +23,10 @@ function getOpenCodeSkillsDir() {
   const home = os.homedir();
   // Try common OpenCode config locations
   const candidates = [
+    path.join(home, '.opencode', 'skills'),
+    path.join(home, '.config', 'opencode', 'skills'),
+    path.join(home, '.local', 'share', 'opencode', 'skills')
+  ];
     path.join(home, '.config', 'opencode', 'skills'),
     path.join(home, '.opencode', 'skills'),
     path.join(home, '.local', 'share', 'opencode', 'skills')
