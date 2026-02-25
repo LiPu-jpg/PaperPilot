@@ -1,0 +1,41 @@
+{
+  "name": "paperpilot",
+  "version": "1.0.0",
+  "description": "AI-assisted academic paper writing skills for OpenCode, Claude Code, and Codex",
+  "main": "index.js",
+  "scripts": {
+    "install:opencode": "node scripts/install-opencode.js",
+    "install:claude": "node scripts/install-claude.js",
+    "install:codex": "node scripts/install-codex.js",
+    "postinstall": "npm run install:opencode",
+    "prepublish": "npm run install:opencode"
+  },
+  "keywords": [
+    "opencode",
+    "claude",
+    "codex",
+    "paper",
+    "academic",
+    "research",
+    "skill"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/PaperPilot.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "files": [
+    "paper-assistant/",
+    "paper-literature-review/",
+    "paper-hypothesis/",
+    "paper-code/",
+    "paper-experiment/",
+    "paper-writing/",
+    "scripts/"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "scientific-papers": {
+      "type": "local",
+      "command": ["npx", "-y", "@futurelab-studio/latest-science-mcp@latest"],
+      "env": {
+        "PAPER_DOWNLOAD_PATH": "./papers"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "semantic-scholar": {
+      "type": "local",
+      "command": ["npx", "-y", "@smithery/cli@latest"],
+      "args": ["run", "@hamid-vakilzadeh/mcpsemanticscholar"],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
